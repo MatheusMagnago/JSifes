@@ -19,22 +19,7 @@
             h1.style.fontSize = tamanho + 'px';
             tamanho--;
         }
-
-        function criabotao() {
-            const botao = document.createElement('button');
-            botao.innerHTML = "+";
-            document.body.append(botao); 
-            botao.addEventListener("click", aumenta);   
-        }
-        
-        function criabotao2() {
-            const botao2 = document.createElement('button');
-            botao2.innerHTML = "-";
-            document.body.append(botao2);
-            botao2.addEventListener("click", diminui);
-            
-        }
-        
+ 
         document.addEventListener("DOMContentLoaded", criabotao);
         document.addEventListener("DOMContentLoaded", criabotao2);
         
@@ -44,7 +29,8 @@
 </head>
 <body>
     <h1>Alterando tamanho do título!!!</h1>
-    
+    <button onclick="aumenta('h1')">+</button>
+    <button onclick="diminui('h1')">-</button>    
     
 </body>
 </html>
